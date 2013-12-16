@@ -15,10 +15,10 @@ app.use(app.router)
 
 
 app.get('/', (req, res) ->
-  res.render('user/dash')
+  res.render('dash')
 )
 app.get('/merchants', (req, res) ->
-  res.render('user/merchants')
+  res.render('merchants')
 )
 
 

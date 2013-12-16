@@ -1,0 +1,13 @@
+{{> top_menu}}
+
+<center><h2>Dashboard</h2></center>
+
+<div id='contentbox'>
+
+  {{#test}}
+  {{> test}}
+  {{/test}}
+
+</div>
+
+{{> bottom_menu}}
