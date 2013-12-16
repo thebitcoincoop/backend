@@ -14,13 +14,12 @@ app.use(express.cookieParser())
 app.use(app.router)
 
 
-app.get('/', (req, res) ->
-  res.render('dash')
-)
-app.get('/merchants', (req, res) ->
-  res.render('merchants')
-)
+app.get('/', (req, res) -> res.render('dash'))
+app.get('/merchants', (req, res) -> res.render('merchants'))
 
+app.get('/login', sessions.new)
+app.post('/login', sessions.create)
+app.get('/logout', sessions.destroy)
 
 app.use((err, req, res, next) ->
   res.status(500)
