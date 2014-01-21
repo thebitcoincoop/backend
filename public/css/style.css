@@ -30,14 +30,16 @@
 
 #contentbox {
 	width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#textbox {
+  width: 80%;
+  float: center;
 }
 
 /* Main view */
-
-#content {
-	padding-left: 50px;
-	padding-right: 50px;
-}
 
 #bottommenu {	
 	padding-top: 5px;
@@ -131,11 +133,16 @@ table {
 	border: 1px;
 	padding-left: 50px;
 	padding-right: 50px;
+  text-align: center;
 }
 
 
 td {
 	background-color: #F2F2F2;
+}
+
+td:hover {
+  background-color: #FFFFFF;
 }
 
 a {
